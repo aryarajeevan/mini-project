@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block title%}
+Events
+{% endblock %}
+
+        {%block content%}
+<h2 class="text-center" style="color:rgb(231, 53, 148);">Events</h2>
+<div class="container">
+         {% for i  in eve %}
+        <!-- <div class="card text-center" style="width: 20rem; display:inline-block;margin: 20px;">
+              <img src="{% static 'images/mrgpic.jpg'%}" class="card-img-top" alt="..." height="150px" width="200px">
+                <div class="card-body">
+                  <h5 class="card-title">marriage</h5>
+                  <p class="card-text">Best option for your Events....Join with us.</p>
+                </div>
+              </div>
+               -->
+
+             
+               <div class="card text-center" style="width: 20rem; display:inline-block;margin: 25px;">
+                <img src="/media/{{i.Photo}}">
+                <div class="card-body">
+                  <h5 class="card-title">{{i.name}}</h5>
+                  <p class="card-text">{{i.desc}}</p>
+                
+              
+               
+                </div>
+              </div>
+              {% endfor %} 
+              <!-- <div class="card text-center" style="width: 18rem; display:inline-block;margin: 20px;">
+                <img src="{% static 'images/birthdy.jpg' %}" class="card-img-top" alt="..." height="150px" width="200px">
+                <div class="card-body">
+                  <h5 class="card-title">Birthday</h5>
+                  <p class="card-text">Best option for your Events....!!Join with Us..</p>
+                </div>
+              </div>
+
+              <div class="card text-center" style="width: 18rem; display:inline-block;margin: 20px;">
+                <img src="{% static 'images/eng.jpg' %}" class="card-img-top" alt="..." height="150px" width="200px">
+                <div class="card-body">
+                  <h5 class="card-title">Engagement</h5>
+                  <p class="card-text">Best option for your Events....!!Join with Us..</p>
+                </div>
+              </div>
+
+              <div class="card text-center" style="width: 18rem; display:inline-block;margin: 20px;">
+                <img src="{% static 'images/baby showr.jpg' %}" class="card-img-top" alt="..." height="150px" width="200px">
+                <div class="card-body">
+                  <h5 class="card-title" style= >Baby Shower</h5>
+                  <p class="card-text">Best option for your Events....!!Join with Us..</p>
+                </div>
+              </div> -->
+</div> 
+
+{% endblock %} 
